@@ -22,17 +22,3 @@ def make_it_fly(bird)
 end
 
 make_it_fly(Ostrich.new)  # 💥 Runtime error!
-
-
-# ✅ Good
-
-class Bird
-  def fly
-    "Flying"
-  end
-end
-
-class Sparrow < Bird; end
-
-sparrow = Sparrow.new
-puts sparrow.fly  # ✅ Works just like Bird

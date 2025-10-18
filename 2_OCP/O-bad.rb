@@ -21,20 +21,3 @@ end
 puts Greeting.new.message(:formal)
 puts Greeting.new.message(:friendly)
 puts Greeting.new.message(:casual)
-
-# ✅ Good
-
-class Greeting
-  def message
-    "Hello"
-  end
-end
-
-class FriendlyGreeting < Greeting
-  def message
-    "Hey there!"
-  end
-end
-
-puts Greeting.new.message
-puts FriendlyGreeting.new.message
